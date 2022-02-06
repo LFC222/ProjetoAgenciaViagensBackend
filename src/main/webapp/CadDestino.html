@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<title>Cadastro Destinos</title>
+</head>
+<body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">DreamTour</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Cadastrar Usuários <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="UsuarioCreateFind">Lista de Usuários</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="CadDestino.html">Cadastrar Destinos<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="DestinoCreateFind">Lista de Destinos</a>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<br/>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-7">
+			<hr/>
+			<h3>Cadastro de Destinos</h3>
+			<hr/>
+			<form action="DestinoCreateFind" method="post">
+				<div class="form-floating mb-3">
+					<label>Nome do Destino</label>
+					<input name="nomeDestino"  type="text" class="form-control">
+				</div>
+				
+				<div class="form-floating mb-3">
+					<label>Descricao</label>
+					<input name="descricao" maxlength="255" type="text" class="form-control">
+				</div>
+				
+				<div class="form-floating mb-3">
+					<label>Dias </label>
+					<input name="dias"  type="number" class="form-control">
+				</div>
+				<div class="form-floating mb-3">
+					<label>Preço</label>
+					<input name="preco" maxlength="15" type="number" class="form-control">
+				</div>
+				
+				<button class="btn btn-primary" type="submit"> Cadastrar</button>
+				<button class="btn btn-secondary" type="reset">Limpar</button>
+			</form>
+			<br/>
+			
+			<h5><a href="DestinoCreateFind">Lista de Destinos</a></h5>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
